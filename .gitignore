@@ -1,4 +1,10 @@
-dist
+build/
+dist/
+env/
+venv/
 *~
-*.swp
-*.pyc
+*.sw[po]
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ropeproject
