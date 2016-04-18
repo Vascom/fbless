@@ -6,7 +6,7 @@ import os
 from distutils.core import setup
 from distutils.command.install_data import install_data
 
-program_version = '0.2.2'
+program_version = '0.2.3'
 
 
 class my_install_data(install_data):
