@@ -1,0 +1,103 @@
+.TH FBLESS 1 "2016\-06\-28" fbless "fbless manual"
+.SH NAME
+fbless  \- Console FB2 reader 
+.SH SYNOPSIS
+.B fbless \fR \- Curses based FictionBook2 viewer.
+
+.B fbless \fR[\fB\-aehv\fR] \fR[\fB\-c PATH\fR] \fR[\fB\-i NUMBER\fR] \fR[\fB\-g NUMBER\fR] \fR[\fB\-t TYPE\fR] /path/to/file.fb2
+.SH OPTIONS
+.TP
+.B \-a, \-\-autoscroll
+Enable autoscroll.
+.TP
+.B \-c, \-\-config PATH
+Use config file cpecified by PATH.
+.TP
+.B \-e, \-\-edit
+Open book in editor.
+.TP
+.B \-g, \-\-goto NUMBER
+Go to text shift by NUMBER percent (%).
+.TP
+.B \-h, \-\-help
+Show usage help and exit.
+.TP
+.B \-i, \-\-interval NUMBER
+Scroll delay in seconds.
+.TP
+.B \-t, \-\-scroll_type TYPE
+Select scroll type: up, down, page-up, page-down, fifo.
+.TP
+.B \-v, \-\-version
+Show program version and exit.
+.SH INTERACTIVE CONTROL
+.TP
+.B Up, k
+Scroll one string up.
+.TP
+.B Down, j
+Scroll one string down.
+.TP
+.B PgUp
+Scroll one page up.
+.TP
+.B Space, PgDown
+Scroll one page down.
+.TP
+.B Home, g
+Go to begin of file.
+.TP
+.B End
+Go to end of file.
+.TP
+.B 5, G
+Go to position in file percent (%).
+.TP
+.B Tab
+Move cursor to next link.
+.TP
+.B Enter, Right
+Go to link.
+.TP
+.B Left, h
+Return.
+.TP
+.B Backspace, l
+Again go to by last link.
+.TP
+.B a
+Enable/disable autoscroll.
+.TP
+.B f
+Scroll in fifo mode.
+.TP
+.B +/-
+Encrease/decrease scrolling delay.
+.TP
+.B /
+Search regular expression.
+.TP
+.B e
+Open book file in editor.
+.TP
+.B n
+Go to next search result.
+.TP
+.B s
+Show/hide status bar.
+.TP
+.B q
+Quit.
+.SH FILES
+.TP
+.B /etc/fblessrc
+Default config file.
+.TP
+.B ~/.fblessrc
+Users config file.
+.SH LICENSE
+This  is  Free Software; this software is licensed under the LGPL version 3, as published by the Free Software Foundation, or later.  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+.SH AUTHORS
+matimatik <matimatik@gmail.com> https://github.com/matimatik/fbless
+
+This manual page was originally written by Vasiliy Glazov <vascom2@gmail.com>.
