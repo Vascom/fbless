@@ -20,6 +20,7 @@ except ImportError:
     xdg_config_home = os.path.expanduser('~/.config')
 
 CONFIG_FILES = [
+    '/etc/fblessrc',
     os.path.join(xdg_config_home, "fbless", "fblessrc"),
     os.path.expanduser("~/.fblessrc"),
 ]
